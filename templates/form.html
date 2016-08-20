@@ -1,0 +1,18 @@
+<div class="row">
+    <h3>{{ title }}</h3>
+    <form ng-submit="savePost()" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="title" ng-model="post.title" type="text" class="validate">
+                <label for="title">Title</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="body" ng-model="post.body" type="text" class="validate">
+                <label for="body">Body</label>
+            </div>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn">Save</button>
+    </form>
+</div>
